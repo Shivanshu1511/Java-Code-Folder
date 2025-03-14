@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class MaximumSubarray{
     public int maxSubArray(int[] nums) {
         int largest_sum = Integer.MIN_VALUE;
@@ -23,6 +24,6 @@ class MaximumSubarray{
             nums[i]= sc.nextInt();
          }  
          MaximumSubarray gt = new MaximumSubarray();
-         gt.maxSubArray( nums);
+        System.out.println(gt.maxSubArray( nums));
     }
 }
