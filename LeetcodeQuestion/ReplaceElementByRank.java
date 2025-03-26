@@ -21,19 +21,14 @@ public class ReplaceElementByRank {
         }
         System.out.println(Arrays.toString(res));
     }
-    public static void replaceElementByRank1(int[] arr){
+    public static void replaceElementByRank1(int[] arr){// but it does not handle the duplicates element case
         int res[] = new int[arr.length];
         for(int i=0; i<arr.length;i++){
             int rank= 1;
             for(int j=0;j < arr.length;j++){
                 if(arr[i]>arr[j]){
                     rank++;
-                } 
-                // Handle Duplicates case .
-                else if (arr[j] == arr[i] && j < i) {
-                    rank++;
-                }
-                
+                }                 
             }
            res[i]=rank;
         }
